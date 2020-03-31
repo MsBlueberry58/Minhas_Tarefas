@@ -12,19 +12,12 @@ ancestral(Y, X) .
 
 % DADOS
 pai(jose, joao) .
-filho(joao, jose) .
 pai(jose, nachor) .
-filho(nachor, jose) .
 pai(jose, marcio) .
-filho(marcio, jose) .
 pai(joao, flavio) .
-filho(flavio, jose) .
 pai(marcio, ricardo) .
-filho(ricardo, marcio) .
 pai(marcio, julia) .
-filha(julia, marcio) .
 mae(silvia, flavio) . 
-filho(flavio, silvia) .
 homem(jose) . 
 homem(joao) . 
 homem(marcio) . 
