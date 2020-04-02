@@ -9,5 +9,9 @@ trem_direto(h,g) .
 
 % PREDICADO
 
-trem_entre(X,Y):- trem_direto(X,Y);trem_direto(Y,X) .
+trem_entre(X,Y):- 
+    trem_direto(X,Y);trem_direto(Y,X);
+    trem_direto(X,_),trem_entre(_,Y);
+    trem_direto(_,Y),trem_entre(X,_) .
+
 
