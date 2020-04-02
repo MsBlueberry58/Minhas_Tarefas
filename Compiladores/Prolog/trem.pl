@@ -11,7 +11,7 @@ trem_direto(h,g) .
 
 trem_entre(X,Y):- 
     trem_direto(X,Y);trem_direto(Y,X);
-    trem_direto(X,_),trem_entre(_,Y);
-    trem_direto(_,Y),trem_entre(X,_) .
+    trem_direto(X,Z),trem_entre(Z,Y);
+    trem_direto(Z,Y),trem_entre(X,Z) .
 
 

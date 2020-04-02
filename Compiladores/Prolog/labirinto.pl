@@ -22,5 +22,7 @@ conectado(16,19).
 % PREDICADO
 caminho(X,Y):- 
     conectado(X,Y);conectado(Y,X);
-    conectado(X,_),caminho(_,Y);
-    conectado(_,Y),caminho(X,_) .
+    conectado(X,Z),caminho(Z,Y);
+    conectado(Z,Y),caminho(X,Z) .
+
+% PREDICADO
