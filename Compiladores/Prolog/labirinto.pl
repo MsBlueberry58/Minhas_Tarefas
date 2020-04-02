@@ -1,4 +1,3 @@
-% DADOS
 conectado(1,2).
 conectado(3,4).
 conectado(5,6).
@@ -19,10 +18,8 @@ conectado(16,12).
 conectado(14,17).
 conectado(16,19).
 
-% PREDICADO
-caminho(X,Y):- 
-    conectado(X,Y);conectado(Y,X);
-    conectado(X,Z),caminho(Z,Y);
-    conectado(Z,Y),caminho(X,Z) .
-
-% PREDICADO
+caminho(X,Y) :-conectado(X,Y),
+write(X),write('-'),write(Y) ,nl;
+conectado(X,Z), 
+caminho(Z,Y), 
+write(X),write('-'),write(Z) ,nl.
