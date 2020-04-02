@@ -60,6 +60,7 @@ cidadeg(portoalegre).
 cidadeg(florianopolis).
 
 % Definição de capitais: capital(X,Y) indica a relação entre estados e suas capitais, ou seja, Y é a capital de X.
+
 capital(ac,riobranco).
 capital(ap,macapa).
 capital(am,manaus).
