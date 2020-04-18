@@ -24,4 +24,4 @@ canget(state(_,_,_,has)).
 canget(State1):-
 write('From: '), write(State1), nl,
 move(State1,Move,State2), write('Action: '), write(Move), nl
-canget(State2), write('To: '), write(State2), !.
+canget(State2), write('To: '), write(State2), nl, write('------'), !.
