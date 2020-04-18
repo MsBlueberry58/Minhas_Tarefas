@@ -1,4 +1,3 @@
-%% BANCO DE DADOS
 % move(State1, Move, State2): Move in State1 results in State2
 % state(HorizPosition,VertPosition, BoxPosition, HasBanana):
 % configures the current state of the problem
@@ -21,7 +20,7 @@ state(P2,onfloor,B,H)).
 % canget( State ): indicates how the monkey can get the banana
 canget(state(_,_,_,has)).
 
-canget(State1):-
-write('From: '), write(State1), nl,
-move(State1,Move,State2), write('Action: '), write(Move), nl
-canget(State2), write('To: '), write(State2), nl, write('------'), !.
+canget(State1):- write('From: '), write(State1), nl, move(State1,Move,State2),
+ write('Action: '), write(Move), nl, 
+write('To: '), write(State2), nl, write('-----------'), nl, canget(State2), nl.
+
