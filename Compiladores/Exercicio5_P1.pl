@@ -20,7 +20,7 @@ state(P2,onfloor,B,H)).
 % canget( State ): indicates how the monkey can get the banana
 canget(state(_,_,_,has)).
 
-canget(State1):- write('From: '), write(State1), nl, move(State1,Move,State2),
- write('Action: '), write(Move), nl, 
-write('To: '), write(State2), nl, write('-----------'), nl, canget(State2), nl.
+canget(State1):- move(State1,Move,State2),
+ canget(State2), write('From: '), write(State1), nl,  write('Action: '), write(Move), nl,
+ write('To: '), write(State2), nl, write('-----------'), nl .
 
