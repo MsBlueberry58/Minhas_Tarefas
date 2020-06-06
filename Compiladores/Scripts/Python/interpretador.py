@@ -94,13 +94,13 @@ op = int(input("Digite sua opcao: "))
 print("Deseja digitar ou importar a cadeia ?")
 opuser = input("Digite sua opcao [d/i]: ")
 
-if (op == (0 or 1 or 2 or 3)) and (opuser =='d'):
+if ((op == 0) or (op == 1) or (op == 2) or (op == 3)) and (opuser =='d'):
     absPath = getAbsPath('Automato {}'.format(op))
     aut   = getAut(absPath)
     chain = input("Digite a cadeia, com cada elemento separado por  ',': ").split(',')
     output = simulate(aut, chain)
     print(output)
-elif (op == (0 or 1 or 2 or 3)) and (opuser =='i'):
+elif ((op == 0) or (op == 1) or (op == 2) or (op == 3)) and (opuser =='i'):
     num_cadeia = int(input("Digite o numero da cadeia [0,1,2,3]: "))
     absPath = getAbsPath('Automato {}'.format(op))
     aut   = getAut(absPath)
