@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Estruturas/Estruturas.iml" filepath="$PROJECT_DIR$/Estruturas/Estruturas.iml" />
-      <module fileurl="file://$PROJECT_DIR$/JustForFun/JustForFun.iml" filepath="$PROJECT_DIR$/JustForFun/JustForFun.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Minhas_Tarefas.iml" filepath="$PROJECT_DIR$/Minhas_Tarefas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaFxApplication.iml" filepath="$PROJECT_DIR$/JavaFxApplication.iml" />
     </modules>
   </component>
 </project>
+
